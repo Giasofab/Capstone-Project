@@ -1,0 +1,90 @@
+@media screen and (max-width: 600px) {
+    /* styles for screens smaller than 600px */
+    form {
+      /* adjust form layout */
+      display: flex;
+      flex-direction: column;
+    }
+    
+    label {
+      /* adjust label layout */
+      margin-bottom: 5px;
+    }
+    
+    input {
+      /* adjust input layout */
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media screen and (min-width: 601px) {
+    /* styles for screens larger than 600px */
+    form {
+      /* adjust form layout */
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+    }
+    
+    label {
+      /* adjust label layout */
+      text-align: right;
+    }
+  }
+
+  .App {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #f47c7c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #f36c6c;
+  }
+  
+  @media screen and (max-width: 480px) {
+    input[type="date"],
+    input[type="time"] {
+      font-size: 14px;
+      width: 100%;
+    }
+  
+    button {
+      font-size: 16px;
+      width: 100%;
+    }
+  }
